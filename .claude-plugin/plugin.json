@@ -1,0 +1,21 @@
+{
+  "name": "karaji",
+  "displayName": "Karaji",
+  "version": "0.2.0",
+  "description": "Buy, sell and analyze used cars in Saudi Arabia: search Karaji listings, publish a car for sale, and get a professional buyer report for any Haraj/Syarah listing link.",
+  "author": {
+    "name": "Karaji",
+    "url": "https://karaji.app"
+  },
+  "homepage": "https://karaji.app",
+  "icon": "assets/icon.png",
+  "license": "UNLICENSED",
+  "keywords": [
+    "cars",
+    "saudi-arabia",
+    "marketplace",
+    "haraj",
+    "used-cars"
+  ],
+  "mcpServers": "./.mcp.json"
+}

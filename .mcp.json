@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "Karaji": {
+      "type": "http",
+      "url": "https://api.karaji.app/mcp"
+    }
+  }
+}
