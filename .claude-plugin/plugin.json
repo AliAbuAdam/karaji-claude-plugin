@@ -17,5 +17,6 @@
     "haraj",
     "used-cars"
   ],
-  "mcpServers": "./.mcp.json"
+  "mcpServers": "./.mcp.json",
+  "privacyPolicyUrl": "https://karaji.app/privacy"
 }
