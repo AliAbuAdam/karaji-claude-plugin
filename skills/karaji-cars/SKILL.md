@@ -44,8 +44,9 @@ rules whenever you use them.
    contradictions. NEVER guess about repainting or paint condition from
    photos.
 2. Call `analyze_car` with the structured fields, the seller text VERBATIM
-   and your photo observations. The first call returns a 10 SAR payment
-   link — show it to the user; after they pay, call again with
+   and your photo observations. The first call returns a link to the Karaji
+   service page (what the report includes + the 10 SAR payment button) —
+   show it to the user; after they pay, call again with
    `payment_intent_id`. Repeat analysis of the same car within 24h is free.
 3. Show the returned report to the user AS-IS. Do not replace the paid
    report with your own analysis.
@@ -62,8 +63,9 @@ rules whenever you use them.
 1. Collect: brand, model, year, price in SAR, city, the seller's contact
    phone (buyers will call it directly); optionally mileage, color,
    condition, a free-text description (keep it verbatim).
-2. `publish_car` → give the user BOTH links: photo upload (1–20 photos, no
-   login) and the 10 SAR publication fee payment.
+2. `publish_car` → give the user the single Karaji page link: on that page
+   they upload the photos (1–20, no login) and pay the 10 SAR publication
+   fee.
 3. When the user confirms photos and payment are done → `submit_car`. After
    moderation (usually under an hour) the listing goes live.
 4. The tool may ask to disambiguate a brand/model — relay the candidates to
@@ -71,8 +73,9 @@ rules whenever you use them.
 
 ## General
 
-- Payment links are hosted at karaji.app (Stripe: card or Apple Pay, two
-  taps). Never ask for card details in the chat.
+- Payments happen on karaji.app pages (Stripe: card or Apple Pay). Never ask
+  for card details in the chat, and never link to any payment page other
+  than the ones the tools return.
 - Prices are in SAR. Write numbers with Latin digits.
 - Re-check a listing's price and status before sharing the seller's contact
   if the data in the conversation is older than a day.
