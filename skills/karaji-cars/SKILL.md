@@ -11,7 +11,7 @@ description: >-
 # Karaji — used cars in Saudi Arabia
 
 Karaji is a Saudi car marketplace. You have its tools connected (search_cars,
-get_car, publish_car, submit_car, fetch_listing, analyze_car). Follow these
+get_car, create_car_draft, submit_car, fetch_listing, analyze_car). Follow these
 rules whenever you use them.
 
 ## Language and formatting
@@ -63,7 +63,7 @@ rules whenever you use them.
 1. Collect: brand, model, year, price in SAR, city, the seller's contact
    phone (buyers will call it directly); optionally mileage, color,
    condition, a free-text description (keep it verbatim).
-2. `publish_car` → give the user the single Karaji page link: on that page
+2. `create_car_draft` → give the user the single Karaji page link: on that page
    they upload the photos (1–20, no login) and pay the 10 SAR publication
    fee.
 3. When the user confirms photos and payment are done → `submit_car`. After
